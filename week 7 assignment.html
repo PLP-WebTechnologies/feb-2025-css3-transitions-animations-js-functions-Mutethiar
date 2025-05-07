@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS + JS + LocalStorage</title>
+    <link rel="stylesheet" href="week 7.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Theme Color</h1>
+        <input type="color" id="colorPicker" />
+        <button id="animateBtn">Animate Box</button>
+        <div id="box"></div>
+
+        <h2>Additional Animations</h2>
+        <button id="rotateBtn">Rotate Circle</button>
+        <div id="circle"></div>
+
+        <button id="scaleBtn">Scale Rectangle</button>
+        <div id="rectangle"></div>
+
+        <h2>Navigation</h2>
+        <button onclick="navigateTo('page1.html')">Go to Page 1</button>
+        <button onclick="navigateTo('page2.html')">Go to Page 2</button>
+    </div>
+
+    <script>
+        // Navigation function
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+    <script src="week 7.js"></script>
+</body>
+</html>
